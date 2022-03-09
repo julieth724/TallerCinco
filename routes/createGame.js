@@ -4,7 +4,7 @@ const router = express.Router();
 
 const createGamer = require("../util/createGamer");
 
-/* GET users listing. */
+/* por medio del post se envila informacion para crear la partida en la base de datos mongo */
 router.post("/", function (req, res, next) {
   createGamer(req.body.gamers).then((gamers) => {
     const idList = gamers.map((gamer) => gamer.id);

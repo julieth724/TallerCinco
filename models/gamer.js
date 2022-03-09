@@ -1,3 +1,5 @@
+/*Realizacion del equema del jugador (gamer) */
+
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 const mongooseSofDelete = require('mongoose-delete');
